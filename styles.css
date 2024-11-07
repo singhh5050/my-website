@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  header nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  header nav a:hover {
+    color: #007bff;
+  }
+  
+  /* Hero Section */
+  #home {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #e9ecef;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #home p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Sections */
+  section {
+    padding: 3rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .project-card {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .project-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+    color: #777;
+  }  

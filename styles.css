@@ -146,6 +146,7 @@ section {
   content: "•";
   position: absolute;
   left: -1.2rem;
+  top: -0.25rem;
   color: #555;
   font-size: 1.2rem;
 }

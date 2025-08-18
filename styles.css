@@ -16,13 +16,36 @@ body {
 main {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   max-width: 700px;
   width: 100%;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Simple message styling */
+.simple-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.simple-message > div {
+  text-align: center;
+}
+
+.simple-message p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* Typography */

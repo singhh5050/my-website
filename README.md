@@ -17,7 +17,7 @@ Then visit <http://127.0.0.1:8000>.
 All page content is in `index.html`. The bio and research introduction come from the supplied Markdown document. The two research entries use the supplied author details and PDFs, with World Action Models listed first.
 
 - **Bio:** edit the paragraph below your name.
-- **Contact:** email, GitHub, LinkedIn, and X are linked below the bio. Commented examples show where to add a CV or Scholar link once you have the actual file or URL.
+- **Contact:** email, LinkedIn, GitHub, and X are linked below the bio. Commented examples show where to add a CV or Scholar link once you have the actual file or URL.
 - **Photo:** replace `images/harsh-singh.jpeg`. It is a copy of the supplied `IMG_6217.jpeg`; the page displays a circular crop and links to the full image. The original source photo is unchanged.
 - **Research:** duplicate a paper's `<tr>...</tr>` block for each publication. Update its title, authors, workshop details, summary, and links. Author names and workshop acceptances come from the user's supplied metadata. World Action Models features the NeurIPS 2026 Robot Learning Workshop (oral presentation). Delta Attention lists the NeurIPS 2026 Pre-to-Post and LCFM workshops and credits the work to NVIDIA. Oral presentation text is bold red, following the original template's treatment.
 - **Papers:** titles are plain text and there are no paper links while the manuscripts await public release. Draft PDFs are not included in the site. Add arXiv links once the papers are available.

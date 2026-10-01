@@ -1,26 +1,177 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!-- Layout and stylesheet from https://github.com/jonbarron/jonbarron.github.io -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harsh Singh</title>
-  <link rel="icon" href="images/IMG_6531.jpeg">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
-  <main>
-    <div class="container">
-      <div class="simple-message">
-        <div>
-          <p>Hi, my name's Harsh!</p>
-          <p>Reach out at singhh [at] stanford [dot] edu</p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Harsh Singh</title>
+
+    <meta name="author" content="Harsh Singh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+
+  <body>
+    <table role="presentation" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p role="heading" aria-level="1" class="name" style="text-align: center;">
+                  Harsh Singh
+                </p>
+                <p>
+                  Hi! I’m an undergrad at Stanford studying CS (AI &amp; Systems).
+                  I’ve worked on robotics, distributed training,
+                  and GPU infrastructure @ <a href="https://www.nvidia.com/">NVIDIA</a>
+                  and edge inference @ <a href="https://www.amd.com/en/corporate/research.html">AMD</a>.
+                  I was also the first undergrad intern at
+                  <a href="https://www.khoslaventures.com/">Khosla Ventures</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:singhh@stanford.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/singhh5050">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/singhh5050/">LinkedIn</a> &nbsp;/&nbsp;
+                  <a href="https://x.com/singhh5050/">X</a>
+                  <!-- Add these only after replacing the URLs or adding your CV:
+                  &nbsp;/&nbsp; <a href="data/HarshSingh-CV.pdf">CV</a>
+                  &nbsp;/&nbsp; <a href="YOUR_SCHOLAR_URL">Scholar</a>
+                  -->
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/harsh-singh.jpeg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="Harsh Singh by the water at sunset" src="images/harsh-singh.jpeg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I'm motivated by <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox">Moravec’s paradox</a>
+                  and the possibility of making physical intelligence as general
+                  and adaptable as we’re learning to make language models.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <!-- Research is ordered intentionally: World Action Models first. -->
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <a href="images/world-action-models-figure-1.png">
+                  <img src="images/world-action-models-figure-1.png" width="160" height="160" style="display:block;object-fit:contain;background:#ffffff;" alt="Figure 1: A donor rollout’s imagined future is inserted into a recipient rollout to test how it changes the robot’s action.">
+                </a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">How Do World Action Models Use Their Imagined Futures? Evidence from Mechanistic Interventions</span>
+                <br>
+                <a href="https://www.nicolema.com/">Nicole H. Ma*</a>, <strong>Harsh Singh*</strong>
+                <br>
+                <em>* Equal contribution</em>
+                <br>
+                <em>NeurIPS Robot Learning Workshop, 2026</em> <strong style="color:red">(Oral Presentation)</strong>
+                <p>
+                  We use activation patching to reveal how robot policies use
+                  imagined futures for manipulation. By intervening on these
+                  future representations, we redirect robot actions and identify
+                  an attention pathway carrying their causal influence.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <a href="images/delta-attention-figure-1.png">
+                  <img src="images/delta-attention-figure-1.png" width="160" height="160" style="display:block;object-fit:contain;background:#ffffff;" alt="Figure 1: FlashAttention-2 and Delta Attention compared across two forward and five backward attention products; green cells show the sparse computation.">
+                </a>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <span class="papertitle">Efficient Long-Context Continued Pretraining with Delta Attention</span>
+                <br>
+                <strong>Harsh Singh</strong>,
+                <a href="https://scholar.google.com/citations?user=G0cJZmAAAAAJ&amp;hl=en">Jeffrey Willette</a>,
+                <a href="https://scholar.google.com/citations?user=mRVm3tkAAAAJ&amp;hl=en">Krishna C Puvvada</a>
+                <br>
+                <em>Work done at NVIDIA.</em>
+                <br>
+                <em>NeurIPS Pre-to-Post &amp; LCFM Workshops, 2026</em>
+                <p>
+                  We introduce a sparse attention method based on
+                  <a href="https://arxiv.org/abs/2505.11254">Delta Attention</a>
+                  that controls how gradients flow through reused corrections,
+                  cutting update time by 23% while retaining long-context
+                  comprehension and near-ceiling retrieval accuracy.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Writing</h2>
+                <p>
+                  <strong>Boothe Prize for Excellence in Writing</strong>
+                  <br>
+                  <em>Stanford University, Program in Writing and Rhetoric &middot; October 2025</em>
+                </p>
+                <p>
+                  3/1800 selected. Recognized for "<a href="https://purl.stanford.edu/cw845zf9677">Cognitive Cyborgism as a Zero-Sum Game</a>," a 26-page paper that dissects human-AI collaboration through a game-theoretic lens.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Honors &amp; Awards</h2>
+                <p>
+                  <strong>1st Place Overall</strong> @ act-athon (Physical Intelligence &amp; Actor Labs) &middot; Sep 2026
+                </p>
+                <p>
+                  <strong>2nd Place ($5,000)</strong> @ Cognition x Etched x Mercor Inference-Time Compute Hackathon &middot; Jun 2026
+                </p>
+                <p>
+                  <strong>1st Place Scrapybara Award ($16,000)</strong> @ TreeHacks &middot; Feb 2025
+                </p>
+                <p>
+                  <strong>Regeneron STS Scholar</strong> &middot; Jan 2024
+                </p>
+                <p>
+                  <strong>ISEF Grand Award</strong> (Cellular &amp; Molecular Biology) &middot; May 2023
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <p style="margin-top:0">
+                  Outside research, I also enjoy <a href="https://aaronmosesphotography.pixieset.com/fashionxrunway/p/MTQxMzg4OTE1NjY=-MjkzNTg1NjY5MQ/">modeling with Stanford FashionX</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table role="presentation" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Template from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
